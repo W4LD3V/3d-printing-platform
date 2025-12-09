@@ -1,0 +1,55 @@
+{
+  "name": "3d-printing-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "prisma db seed",
+    "test:e2e": "wdio run wdio.conf.ts"
+  },
+  "dependencies": {
+    "@apollo/client": "3.10.8",
+    "@next-auth/prisma-adapter": "1.0.7",
+    "@prisma/client": "5.10.2",
+    "@types/bcryptjs": "2.4.2",
+    "bcryptjs": "2.4.3",
+    "graphql": "16.8.1",
+    "graphql-tag": "2.12.6",
+    "graphql-yoga": "5.3.1",
+    "next": "^14.2.33",
+    "next-auth": "^4.24.13",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swr": "2.2.5",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "@typescript-eslint/eslint-plugin": "6.20.0",
+    "@typescript-eslint/parser": "6.20.0",
+    "@wdio/cli": "8.32.2",
+    "@wdio/cucumber-framework": "8.32.2",
+    "@wdio/local-runner": "8.32.2",
+    "@wdio/spec-reporter": "8.32.2",
+    "autoprefixer": "10.4.17",
+    "chromedriver": "^131.0.0",
+    "eslint": "8.57.0",
+    "eslint-config-next": "^14.2.33",
+    "postcss": "8.4.33",
+    "prisma": "5.10.2",
+    "tailwindcss": "3.4.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5",
+    "wdio-chromedriver-service": "8.1.1"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
